@@ -35,7 +35,7 @@ public class MainJob {
 	}
 
 	private static void startJob(CoordinatorRegistryCenter registryCenter) {
-		JobCoreConfiguration myjob = JobCoreConfiguration.newBuilder("myjob", "*/3 * * * * ?", 1).build();
+		JobCoreConfiguration myjob = JobCoreConfiguration.newBuilder("myjob", "*/3 * * * * ?", 3).build();
 
 		SimpleJobConfiguration simpleJobConfiguration = new SimpleJobConfiguration(myjob, FileBackupJob.class.getCanonicalName());
 

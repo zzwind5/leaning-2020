@@ -16,8 +16,8 @@ public class FileBackupJob implements SimpleJob {
 
 	@Override
 	public void execute(ShardingContext shardingContext) {
-		int count = shardingContext.getShardingTotalCount();
-		System.out.println(String.format("分片数: %d", count));
+		int index = shardingContext.getShardingItem();
+		System.out.println(String.format("分片数: %d", index));
 
 		List<FileCustom> fileCustoms = fetchUnBackupFiles(FETCH_COUNT);
 
