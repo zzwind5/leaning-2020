@@ -10,7 +10,8 @@
     <modules>
         <module>elastic-job-demo</module>
         <module>elastic-job-spring</module>
-    </modules>
+		<module>redis-pub-sub</module>
+	</modules>
     <packaging>pom</packaging>
 
     <dependencyManagement>
