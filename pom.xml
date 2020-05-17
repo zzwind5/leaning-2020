@@ -11,6 +11,8 @@
         <module>elastic-job-demo</module>
         <module>elastic-job-spring</module>
 		<module>redis-pub-sub</module>
+        <module>jie-start-test</module>
+		<module>spring-annotation-demo</module>
 	</modules>
     <packaging>pom</packaging>
 
