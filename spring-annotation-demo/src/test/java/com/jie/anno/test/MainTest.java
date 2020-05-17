@@ -1,15 +1,18 @@
-package com.jie.anno;
+package com.jie.anno.test;
 
 import com.jie.anno.com.jie.anno.config.MyConfig;
-import com.jie.anno.com.jie.anno.entity.Person;
+import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.util.Arrays;
 
 public class MainTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void test01() {
 		AnnotationConfigApplicationContext ioc = new AnnotationConfigApplicationContext(MyConfig.class);
 
-		Person person = ioc.getBean("pp1", Person.class);
-		System.out.println(person);
+		String[] beans = ioc.getBeanDefinitionNames();
+		Arrays.stream(beans).forEach(System.out::println);
 	}
 }
