@@ -6,4 +6,8 @@ package com.jie.anno.com.jie.anno.entity;
  * @date: 2020/5/17 16:41
  */
 public class Blue {
+
+	public Blue() {
+		System.out.println("Blue ...... Construct");
+	}
 }
