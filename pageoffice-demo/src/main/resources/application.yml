@@ -1,0 +1,5 @@
+server:
+  port: 8080
+
+posyspath: D:\Development\pageoffice\lic
+popassword: 123456

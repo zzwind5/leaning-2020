@@ -13,7 +13,9 @@
 		<module>redis-pub-sub</module>
         <module>jie-start-test</module>
 		<module>spring-annotation-demo</module>
-	</modules>
+		<module>pageoffice-demo</module>
+        <module>demo-cookie</module>
+    </modules>
     <packaging>pom</packaging>
 
     <dependencyManagement>

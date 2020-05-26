@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    session:
+      cookie:
+        domain: zhang.com
+spring:
+  session:
+    store-type: redis
+    redis:
+      namespace: demo
+  redis:
+    host: 192.168.222.20
+    port: 6379
+  application:
+    name: aa
+
